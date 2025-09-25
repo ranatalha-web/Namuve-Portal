@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background-color: #111418;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+    }
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar-header img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .sidebar-header h2 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav li {
+      margin: 5px 0;
+    }
+
+    .nav a {
+      display: block;
+      padding: 12px 20px;
+      color: #bbb;
+      text-decoration: none;
+      font-size: 15px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .nav a:hover, 
+    .nav a.active {
+      background-color: #1f2227;
+      color: white;
+      border-left: 4px solid #4b9cff;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #f5f6fa;
+    }
+
+    .main-content h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="https://via.placeholder.com/40" alt="Logo">
+      <h2>Namueve Portal</h2>
+    </div>
+    <ul class="nav">
+      <li><a href="#" class="active">FDO Panel</a></li>
+      <li><a href="#">Occupancy</a></li>
+      <li><a href="#">Revenue</a></li>
+      <li><a href="#">Reporting</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>FDO Panel</h1>
+    <p>Manage guest check-ins, check-outs, and room status.</p>
+  </div>
+
+</body>
+</html>
